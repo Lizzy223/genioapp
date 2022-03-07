@@ -1,0 +1,39 @@
+.border-none{
+    border: none !important;
+}
+
+.btn-pay{
+    padding:.55rem;
+    cursor: pointer;
+    color: #2B4146;
+    background-color: #fff;
+    border: none;
+    font-size: small;
+}
+
+.text-red{
+    color: red !important;
+}
+
+.ui-tab{
+    color:#2B4146 !important;
+    padding: .55rem;
+    outline: none !important;
+    background-color: #fff;
+    border: none;
+    
+}
+
+.ui-tab:active{
+    border-bottom: var(--main-color) !important ;
+    color: #000 !important;  
+    outline: none !important; 
+}
+
+.round-br{
+    border-radius: 8px !important;
+}
+
+.width-lg{
+    width: 35%;
+}

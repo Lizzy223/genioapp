@@ -1,0 +1,32 @@
+.navbar-end{
+    float:right !important;
+    justify-content: end !important;
+    display: flex;
+    white-space: nowrap !important;
+}
+
+.nav-btn{
+    width: 100%;
+    padding: .55rem;
+    color: #fff;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 8px;
+    white-space: nowrap;
+    font-size: small;
+}
+
+.nav-none{
+    display: flex;
+}
+
+
+@media only screen and (max-width:768px) {
+    .nav-none{
+        display: none;
+    }
+
+    .font-sm-small{
+        font-size: 1rem;
+    }
+}

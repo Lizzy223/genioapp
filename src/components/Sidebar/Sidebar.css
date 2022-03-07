@@ -1,0 +1,19 @@
+.payin-btn{
+    padding:.55rem;
+    width:100%;
+    border:none;
+    border-radius: 8px;
+    color:#fff;
+    background: #FDA4AF;
+    white-space: nowrap;
+}
+
+.payout-btn{
+    padding:.55rem;
+    width:100%;
+    border:none;
+    border-radius: 8px;
+    color:var(--main-color);
+    background: #fff;
+    white-space: nowrap;
+}

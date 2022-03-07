@@ -1,0 +1,74 @@
+.tab-btn{
+    padding: 1rem 1rem;
+    border: none !important;
+    background-color: transparent;
+    outline: none !important;
+    color: #2B4146;
+    display: flex;
+    white-space: nowrap;
+    font-weight: bold;
+}
+/* 
+.tab-btn:focus, .tab-btn:visited{
+    outline: none !important;
+    border: none !important;
+}
+
+.tab-btn:active{
+    border-bottom: 2px solid #0060F8 !important;
+    color: #0060F8;
+} */
+.tab-btn:active, .tab-btn:hover, .tab-btn:focus{
+    border-bottom: none !important;
+    outline: none;
+    box-shadow: none;
+    color: #017189 !important;
+    border-radius:none;
+}
+
+.img-btn{
+    color:#2B4146 !important;
+    width: 50%;
+    height: 50%;
+}
+
+/* Convert.js */
+.convert-input{
+    padding: .5rem;
+    border: 1px solid #94A3B8;
+    background-color: #F8FCFC;
+    color: #94A3B8;
+    border-radius: 8px;
+}
+
+.img-btn:hover, .img-btn:active, .img-btn:focus{
+    color: #017189 !important;
+}
+
+.select-items{
+    padding:.55rem;
+    margin:.5rem
+}
+
+
+/* table */
+
+table{
+    width: 100%;
+    padding: .75rem;
+    background-color: #fff;
+}
+
+table>thead>tr{
+    font-weight: bold;
+    color:#000;
+}
+thead{
+    border-bottom: 1px solid #ccc;
+    padding: .55rem;
+}
+
+table>tbody>tr>td{
+    padding:.75rem;
+    color:#2B4146;
+}
