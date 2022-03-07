@@ -8,7 +8,7 @@ const Fxcenters = () => {
       <div>
         <Sidebar/>
         <div class="main-content">
-            <Navbar name='Kudi LTD'/>
+            <Navbar name='Kudi LTD' dash='FX Center'/>
                 <Fxcenter/>
         </div>
     </div>

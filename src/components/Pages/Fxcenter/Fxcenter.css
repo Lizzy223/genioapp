@@ -37,8 +37,17 @@
     padding: .5rem;
     border: 1px solid #94A3B8;
     background-color: #F8FCFC;
+  
     color: #94A3B8;
     border-radius: 8px;
+}
+.convert-input>option::before{
+    background: url('../../../assets/usdflag.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.convert-input::placeholder{
+    margin-left: 1rem;
 }
 
 .img-btn:hover, .img-btn:active, .img-btn:focus{

@@ -11,7 +11,7 @@ const Dash = () => {
     <Sidebar/>
     {/* <!-- main content --> */}
     <div class="main-content">
-       <Navbar name='Huss Smith'/>
+       <Navbar name='Huss Smith' dash='Beneficiary'/>
         <Beneficiary/>
         {/* <Fxcenter/> */}
     </div>

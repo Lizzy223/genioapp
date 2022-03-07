@@ -12,7 +12,7 @@ const Navbar = (props) => {
                 <div class='col-md-12 justify-content-betwween d-flex align-items-center'>
                     <div class='col-md-3 float-left align-items-center'>
                         <h2 class='font-sm-small'>
-                            Beneficiaries
+                            {props.dash}
                         </h2>
                     </div>
                     <div class='col-md-5 ml-5 nav-none align-items-center' >
