@@ -8,6 +8,25 @@
     white-space: nowrap;
     font-weight: bold;
 }
+
+.tab2-btn{
+    padding: 1rem 1rem;
+    border: none !important;
+    background-color: transparent;
+    outline: none !important;
+    color: #2B4146;    
+    display: flex;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.tab2-btn:active, .tab2-btn:hover, .tab2-btn:focus{
+    border-bottom: 1px solid #001B21;
+    outline: none;
+    box-shadow: none;
+    color: #001B21 !important;
+    border-radius:none;
+}
 /* 
 .tab-btn:focus, .tab-btn:visited{
     outline: none !important;
@@ -54,6 +73,12 @@
     color: #017189 !important;
 }
 
+.rounded-img{
+    width:10%;
+    height: 10%;
+    border-radius: 50% !important;
+}
+
 .select-items{
     padding:.55rem;
     margin:.5rem
@@ -78,6 +103,6 @@ thead{
 }
 
 table>tbody>tr>td{
-    padding:.75rem;
+    padding:1rem;
     color:#2B4146;
 }

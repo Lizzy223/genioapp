@@ -15,9 +15,9 @@ import { TabList, TabPanel,Tab, Tabs } from 'react-tabs';
 
 const Rows = [
     {id:1, currency:'USD US Dollar', img:usd, rate:'1.605923', change:'+0.53%', chart:gain}, 
-    {id:3, currency:'EUR Euro', img:pay, rate:'1.700041', change:'-1.03%', chart:loss},
+    {id:3, currency:'EUR Euro', img:euro, rate:'1.700041', change:'-1.03%', chart:loss},
     {id:4, currency:'GBP British Pound', img:usd, rate:'0.554125', change:'-0.25%', chart:loss},
-    {id:5, currency:'AUD Austrialian Dollar', img:euro, rate:'71.11923', change:'+0.84%', chart:gain},
+    {id:5, currency:'AUD Austrialian Dollar', img:usd, rate:'71.11923', change:'+0.84%', chart:gain},
     {id:6, currency:'CAD Canadian Dollar', img:usd, rate:'0.114523', change:'+2.44%', chart:gain}
 ]
 
@@ -27,7 +27,7 @@ const Table = (props) =>{
        return(        
         
         <tr>
-            <td class='d-flex'><img src={img} alt='' class='img-responsive img-fluid'/> {currency}</td>
+            <td class='d-flex'><img src={img} alt='' class='img-responsive rounded-img img-fluid'/> &nbsp; &nbsp; {currency}</td>
             <td>{rate}</td>
             <td>{change}</td>
             <td><img src={chart} alt='' class='img-responsive img-fluid'/></td>
@@ -38,7 +38,7 @@ const Table = (props) =>{
 const LiveRate=() => {
     return(
         <div class=''>
-            <p class='text-secondary'> Rates are updated every 5 seconds</p>
+            <p class='text-secondary font-bold'> Rates are updated every 5 seconds</p>
             <div class='mt-4'>
                
 
@@ -54,7 +54,7 @@ const LiveRate=() => {
                     <tbody>
                     
                     {Rows.map((Row) =>
-                <Table key={Row.id} currency={Row.currency} rate={Row.rate} change={Row.change} chart={Row.chart} />
+                <Table key={Row.id} img={Row.img} currency={Row.currency} rate={Row.rate} change={Row.change} chart={Row.chart} />
                 )}
                 <button class='pay-btn'>Add Currency</button>
                     </tbody>
@@ -67,7 +67,7 @@ const LiveRate=() => {
 const Convert = () => {
   return (
     <div class='container-fluid'>
-        <div class='row'>
+        <div class='row mt-5'>
             <div class='col-md-12 m-auto text-center'>
                 <form>
                     <div class='row d-flex justify-content-between'>
@@ -111,8 +111,8 @@ const Convert = () => {
             <div class='col-md-12 mt-2'>
                 <Tabs>
                         <TabList className='col-md-8 m-auto text-center d-flex justify-content-between pl-5 mb-5'>
-                            <Tab><button className='tab-btn active'> Live Rate</button></Tab>
-                            <Tab><button className='tab-btn'> Other Companies Rate</button></Tab>
+                            <Tab><button className='tab2-btn active'> Live Rate</button></Tab>
+                            <Tab><button className='tab2-btn'> Other Companies Rate</button></Tab>
                         </TabList>
                         <TabPanel>
                             <LiveRate/>

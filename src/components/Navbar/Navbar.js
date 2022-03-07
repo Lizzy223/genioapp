@@ -33,7 +33,7 @@ const Navbar = (props) => {
                             <img src={img3} alt='' class='img-fluid img-responsive'/>&nbsp;                            
                             <div class='mr-3'>
                                 <small class='text-success'>Verified</small>
-                                    <p class='text-bold' style={{whiteSpace:'nowrap'}}>{props.name} &nbsp; <i class='las la-angle-down'/></p>
+                                    <p class='font-bold' style={{whiteSpace:'nowrap'}}>{props.name} &nbsp; <i class='las la-angle-down'/></p>
                             </div>
                             </div>
                         </div>                        
