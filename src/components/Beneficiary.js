@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
-import Fxcenter from './Pages/Fxcenter/Fxcenter'
 import Beneficiary from './Pages/Beneficiaries/Beneficiary'
 import Sidebar from './Sidebar/Sidebar'
 

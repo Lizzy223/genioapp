@@ -5,10 +5,7 @@ import pay from '../../../assets/convertsend.svg'
 import euro from '../../../assets/eurflag.svg'
 import gain from '../../../assets/gain.svg'
 import loss from '../../../assets/LOSS.svg'
-import add from '../../../assets/add.svg'
-import Chart from './Chart'
 import { TabList, TabPanel,Tab, Tabs } from 'react-tabs';
-import { display } from '@mui/system'
 
 
 
