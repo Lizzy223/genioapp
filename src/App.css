@@ -59,13 +59,13 @@ color: #001B21;
   padding-left: 1rem;
   margin-left: 1rem;
 }
-.sidebar-menu a{
+.sidebar-menu a, .sidebar-menu Link{
   padding-left: .5rem;
   display: block;
   color: #fff;
   font-size: small;
 }
-.sidebar-menu a.active{
+.sidebar-menu a.active , .sidebar-menu Link:active{
   background-color: #fff;
   color: var(--main-color);
   /* padding-top: .5rem ;
@@ -78,7 +78,7 @@ color: #001B21;
   border-bottom-left-radius: 1.875rem; */
   border-radius: 8px;
 }
-.sidebar-menu a span:first-child {
+.sidebar-menu a span:first-child, .sidebar-menu Link span:first-child {
   font-size: 1rem;
   padding-right: .5rem;
 }
@@ -101,7 +101,8 @@ color: #001B21;
 
 
 #nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
-#nav-toggle:checked + .sidebar li a span:last-child{
+#nav-toggle:checked + .sidebar li a span:last-child,
+#nav-toggle:checked + .sidebar li Link span:last-child{
   display: none;
 }
 
@@ -158,54 +159,12 @@ header label span{
    border: none;
 }
 
-.user-wrapper {
-   display: flex;
-   align-items: center;
-}
-.user-wrapper img {
-   border-radius: 50%;
-   margin-right: 1rem;
-}
-
-.user-wrapper small {
-   display: inline-block;
-   color: var(--text-grey);
-}
-
 main{
    margin-top: 6.313rem;
    padding: 2rem 1.5rem;
    background: #fff;
    min-height: calc(100vh - 5.625rem);
 }
-/* table{
-  border-collapse: collapse;
-}
-
-tbody tr{
-  border-top: 1px solid #f0f0f0;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-thead td{
-  font-weight: 700;
-}
-td{
-  padding: .5rem;
-  font-size: .9rem;
-  color: #222;
-}
-td .status {
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  margin-right: 1rem;
-}
-tr td:last-child{
-  display: flex;
-  align-items: center;
-} */
 .table-responsive{
   width: 100%;
   overflow-x: auto;
@@ -225,13 +184,13 @@ tr td:last-child{
       text-align: center;
   }
   
-  .sidebar li a{
+  .sidebar li a, .sidebar li Link{
       padding-left: 0rem;
   }
   
   
   .sidebar .sidebar-brand h2 span:last-child,
-  .sidebar li a span:last-child{
+  .sidebar li a span:last-child, .sidebar li Link span:last-child{
       display: none;
   }
   

@@ -11,6 +11,7 @@ import img5 from '../../assets/profile.svg'
 import img6 from '../../assets/pearls.svg'
 import refer from '../../assets/refer.svg'
 import './Sidebar.css'
+import {Link} from 'react-router-dom'
 
 const Sidebar = () => {
   return (
@@ -68,12 +69,12 @@ const Sidebar = () => {
                     <span>Cards</span></a>
                 </li>
                 <li>
-                    <a href="/fx-center"><span class="las "><img scr={img4} alt='' class=''/> </span>
-                     <span>Fx center</span></a>
+                    <Link to="/fx-center"><span class="las "><img scr={img4} alt='' class=''/> </span>
+                     <span>Fx center</span></Link>
                 </li>
                 <li>
-                    <a href="/"><span class="las "><img scr={img5} alt='' class=''/> </span>
-                    <span>Beneficiary</span></a>
+                    <Link to="/"><span class="las "><img scr={img5} alt='' class=''/> </span>
+                    <span>Beneficiary</span></Link>
                 </li>
                 <li>
                     <a href="/"><span class="las "><img scr={img6} alt='' class=''/> </span>
