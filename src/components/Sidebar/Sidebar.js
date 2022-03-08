@@ -25,7 +25,7 @@ const Sidebar = () => {
         </div>
         <div class="sidebar-menu">
             <ul>
-                <div class='col-9 m-auto rounded p-4 mb-5' style={{background:'#2b899d', color:'#fff'}}>
+                <div class='col-9 m-auto rounded p-4 mb-5 nav-none' style={{background:'#2b899d', color:'#fff'}}>
                     <div class='row'>
                         <div class='col-md-12 d-flex'>
                             <div>
@@ -81,7 +81,7 @@ const Sidebar = () => {
                     <span>Perks</span></a>
                 </li>
 
-                <div class='col-md-9 mt-3 rounded p-4 m-auto' style={{background:'#fff', color:'#000'}}>
+                <div class='col-md-9 mt-3 rounded p-4 m-auto nav-none' style={{background:'#fff', color:'#000'}}>
                     <div class='w-100 d-flex' style={{background:'#fff', color:'#000'}}>
                         <div class='float-left'>
                             <img src={refer} alt='' class='img-responsive img-fluid'/> &nbsp;
