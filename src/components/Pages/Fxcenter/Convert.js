@@ -1,12 +1,14 @@
-import React from 'react'
+import React, {useState}  from 'react'
 import './Fxcenter.css'
 import usd from '../../../assets/usdflag.svg'
 import pay from '../../../assets/convertsend.svg'
 import euro from '../../../assets/eurflag.svg'
 import gain from '../../../assets/gain.svg'
 import loss from '../../../assets/LOSS.svg'
+import add from '../../../assets/add.svg'
 import Chart from './Chart'
 import { TabList, TabPanel,Tab, Tabs } from 'react-tabs';
+import { display } from '@mui/system'
 
 
 
@@ -56,7 +58,7 @@ const LiveRate=() => {
                     {Rows.map((Row) =>
                 <Table key={Row.id} img={Row.img} currency={Row.currency} rate={Row.rate} change={Row.change} chart={Row.chart} />
                 )}
-                <button class='pay-btn'>Add Currency</button>
+                <button class='add-btn align-items-center'><i class='las la-plus font-bold'/> Add Currency</button>
                     </tbody>
                 </table>
             </div>
@@ -65,6 +67,10 @@ const LiveRate=() => {
 }
 
 const Convert = () => {
+    const [show, setShow] = useState(false);
+
+    const [isShow, setIsShow] = useState(false);
+
   return (
     <div class='container-fluid'>
         <div class='row mt-5'>
@@ -78,21 +84,57 @@ const Convert = () => {
                         </div>
                         <div class='col-md-3'>
                             <p class='text-left font-bold'>From</p>
-                            <div>
-                                <select  class='convert-input' name="cars" id="cars">
-                                    <option class='select-items' value="USD - US Dollar">  USD - US Dollar</option>
-                                    <option class='select-items'  value="EUR - Euro">EUR - Euro</option>
-                                </select>
+                            <div class='w-100 col-12 justify-content-between p-2 d-flex border rounded-bg convert-input'onClick={() => setShow(!show)} >
+                                <div class='float-left d-flex '>
+                                    <img src={usd} alt='' class='img-fluid img-responsive'/>
+                                    <span class=''>USD - US Dollar</span>
+                                </div>
+                                <div class='float-right'>
+                                    <i class='la la-angle-down'/>
+                                </div>   
                             </div>
-                            <p class='mt-3 text-left' style={{color:'#2B4146'}}>You send: $ 0.00</p>
+                            
+                            {show && (
+                            <div class='w-100  mt-3  z-index p-2 rounded border' style={{height:'40%', background:'#fff'}}>
+                                <div class='float-left d-flex '>
+                                    <img src={usd} alt='' class='img-fluid img-responsive'/>
+                                    <span class=''>USD - US Dollar</span>
+                                </div>
+                                <div class='float-left d-flex mt-2'>
+                                    <img src={euro} alt='' class='img-fluid img-responsive'/>
+                                    <span class=''>USD - US Dollar</span>
+                                </div>
+                            </div>
+                             )}
+.
+                            <p class='mt-3 text-left' style={{color:'#2B4146'}}>You send: <span class='font-bold'> $ 0.00</span></p>
                         </div>
+                        
                         <div class='col-md-3'>
                             <p class='text-left font-bold'>To</p>
-                            <select  class='convert-input' name="cars" id="cars">
-                            <img src={usd} alt='' class='img-responsive img-fluid'/> <option class='select-items' value="EUR - Euro">  EUR - Euro</option>
-                                <img src={usd} alt='' class='img-responsive img-fluid'/> <option class='select-items'  value="EUR - Euro">EUR - Euro</option>
-                            </select>
-                            <p class='mt-3 text-left' style={{color:'#2B4146'}}>They receive: €0.00</p>
+                            <div class='w-100 col-12 justify-content-between p-2 d-flex border rounded-bg convert-input'onClick={() => setIsShow(!isShow)} >
+                                <div class='float-left d-flex '>
+                                    <img src={euro} alt='' class='img-fluid img-responsive'/>
+                                    <span class=''>EUR - Euro</span>
+                                </div>
+                                <div class='float-right'>
+                                    <i class='la la-angle-down'/>
+                                </div>   
+                            </div>
+                            
+                            {isShow && (
+                            <div class='w-100  mt-3  z-index p-2 rounded border' style={{height:'40%', background:'#fff'}}>
+                                <div class='float-left d-flex '>
+                                    <img src={usd} alt='' class='img-fluid img-responsive'/>
+                                    <span class=''>USD - US Dollar</span>
+                                </div>
+                                <div class='float-left d-flex mt-2'>
+                                    <img src={euro} alt='' class='img-fluid img-responsive'/>
+                                    <span class=''>USD - US Dollar</span>
+                                </div>
+                            </div>
+                             )}
+                            <p class='mt-3 text-left' style={{color:'#2B4146'}}>They receive:<span class='font-bold'> €0.00</span></p>
                         </div>
                         <div class='col-md-12 mt-4 mb-5'>
                         {/* &nbsp is for creating space  */}

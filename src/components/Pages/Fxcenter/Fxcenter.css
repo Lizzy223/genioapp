@@ -56,7 +56,7 @@
     padding: .5rem;
     border: 1px solid #94A3B8;
     background-color: #F8FCFC;
-  
+    cursor: pointer;
     color: #94A3B8;
     border-radius: 8px;
 }
@@ -84,7 +84,9 @@
     margin:.5rem
 }
 
-
+.rounded-bg{
+    border-radius: 8px;
+}
 /* table */
 
 table{
@@ -105,4 +107,13 @@ thead{
 table>tbody>tr>td{
     padding:1rem;
     color:#2B4146;
+}
+
+.add-btn{
+    color:var(--main-color) !important;
+    padding: .35rem;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    font-weight:bold;
 }

@@ -12,7 +12,7 @@ import './main.css'
 const Beneficiary =(props) =>{
     const { currencyImg, name, number, currency } = props;
     return(
-        <div class='col-md-3 border round-br p-3 m-1'>
+        <div class='col-md-3 border round-br p-2 m-1'>
                     <div class='row'>
                         <div class='col-md-12'>
                             <div class='row d-flex justify-number-between'>
@@ -132,10 +132,10 @@ const Details = [
 const Thirdpartyaccount = () => {
   return (
     <div class='container-fluid'>
-        <div class='row'>
-            <div class='col-md-12 width-lg'>
+        <div class='row w-100'>
+            <div class='col-md-12 '>
                 <div class='float-left'>
-                    <p class='font-bold'>{Details.length} Beneficiary (s)</p>
+                    <p class='font-bold'>53 Beneficiary (s)</p>
                 </div>
                 <div class='float-right'>
                         <div class=' nav-none' >
@@ -148,8 +148,8 @@ const Thirdpartyaccount = () => {
                        
                 </div>
              </div>
-             <div class='col-lg-12 mt-3'>
-                 <div class='row justify-content-evenly'>
+             <div class='col-lg-12 w-100 mt-3'>
+                 <div class='row justify-content-evenly w-100'>
                      {/*  */}
                      {Details.map((Detail) =>
                     <Beneficiary key={Detail.id} name={Detail.name} number={Detail.number} currency={Detail.currency} currencyImg={Detail.currencyImg} />
