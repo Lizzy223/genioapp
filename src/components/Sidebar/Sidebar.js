@@ -81,7 +81,7 @@ const Sidebar = () => {
                     <span>Perks</span></a>
                 </li>
 
-                <div class='col-md-9 mt-3 rounded p-4 m-auto nav-none' style={{background:'#fff', color:'#000'}}>
+                <div class='col-md-9 mt-3 rounded p-4 m-auto ' style={{background:'#fff', color:'#000'}}>
                     <div class='w-100 d-flex' style={{background:'#fff', color:'#000'}}>
                         <div class='float-left'>
                             <img src={refer} alt='' class='img-responsive img-fluid'/> &nbsp;
